@@ -40,8 +40,8 @@ public class RunApachePdfBox {
 	}
 
 	private static void test() throws Exception{
-		   String text = getText(new File("C:\\Users\\Michael\\dev\\softwarekanzlei\\ws\\work\\data\\gdv\\stellungnahme\\GDV_Stellungnahme_Hinterbliebenengeld_2017.pdf"));
-		    //System.out.println("Text in PDF: " + text);
+		   String text = getText(new File("C:\\Users\\Michael\\dev\\softwarekanzlei\\ws\\work\\data\\privat\\kündigung\\Kündigung ADAC.pdf"));
+		
 		
 	}
 	
@@ -54,7 +54,7 @@ public class RunApachePdfBox {
 	    String result =  stripper.getText(doc);
 	    
 
-	    //System.out.println(stripper.getTotalCharCnt());
+	    System.out.println(result);
 	    
 	    System.out.println(doc.getNumberOfPages());
 	    
@@ -102,6 +102,7 @@ public class RunApachePdfBox {
 	    		   for(Object o2: al){
 	    			   TextPosition tp = (TextPosition) o2;
 	    			   System.out.println(tp.toString());
+	    			   
 	    		   }
 	    		   
 	    	   }
@@ -116,7 +117,7 @@ public class RunApachePdfBox {
 		System.out.println(doc.getPages().getCount());
 		
 		
-		PDPage page =doc.getPage(1);
+		PDPage page =doc.getPage(0);
 		
 		Iterator<PDStream> iter = page.getContentStreams();
 		
