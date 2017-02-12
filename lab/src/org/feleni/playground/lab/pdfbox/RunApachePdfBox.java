@@ -40,7 +40,7 @@ public class RunApachePdfBox {
 	}
 
 	private static void test() throws Exception{
-		   String text = getText(new File("C:\\Users\\Michael\\dev\\softwarekanzlei\\ws\\work\\data\\privat\\kündigung\\Kündigung ADAC.pdf"));
+		   String text = getText(new File("C:\\Users\\Michael\\dev\\softwarekanzlei\\ws\\work\\resources\\data\\privat\\kündigung\\Kündigung ADAC.pdf"));
 		
 		
 	}
